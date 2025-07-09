@@ -14,24 +14,19 @@
         <div class="d-flex flex-column">
             <h1 class="">Password Generator</h1>
             <div class="d-flex flex-column gap-2 mt-2">
-                <label for="passwordLength" class="text-uppercase fw-bold" type="number">password Length</label>
+                <label for="passwordLength" class="text-uppercase fw-bold" type="number" >password Length</label>
                 <input class="form-control form-control-lg" id="passwordLength" type="number"
                     placeholder="password Length">
                 <label for="passwordLength" class="text-uppercase fw-bold">password</label>
-                <input class="form-control form-control-lg" id="password" type="password" placeholder="password">
+                <input class="form-control form-control-lg" id="password" type="password" placeholder="password" disabled>
                 <button class="btn btn-outline-info" type="button" id="showBtn" onclick="showpw()">Show
                     password</button>
-                <label for="passwordLength" class="text-uppercase fw-bold">Confirm Password</label>
-                <input class="form-control form-control-lg" id="conpass" type="password" placeholder="Confirm password">
-                <button class="btn btn-outline-info" type="button" id="conpassBtn" onclick="conpass()">Show
-                    password</button>
-                <button class="btn btn-dark fw-bold text-capitalize btn-lg mt-4">generate password</button>
-                <button class="btn btn-success text-capitalize fw-bold btn-sm mt-2">Save Password</button>
+                <button class="btn btn-dark fw-bold text-capitalize btn-lg mt-4" onclick="getPassword()">generate password</button>
+                <a class="btn btn-success text-capitalize fw-bold btn-sm mt-2" onclick="savePW()" id="savePassword">Save Password</a>
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
-    <script src="showpw.js"></script>
+    <script src="script.js"></script>
     <script src="rooter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
